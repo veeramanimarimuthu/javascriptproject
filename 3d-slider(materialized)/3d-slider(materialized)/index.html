@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--divinectorweb.com-->
+  <head>
+    <meta charset="UTF-8" />
+    <title>How to 3D Testimonial Carousel using Materialize CSS</title>
+    <link
+      rel="stylesheet"
+      href="materialize-v1.0.0/materialize/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="carousel">
+      <a class="carousel-item" href="#">
+        <div class="testi">
+          <div class="img-area">
+            <img src="img/Gopalakrishnan.jpg" />
+          </div>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+            veritatis repellendus delectus, est, alias recusandae."
+          </p>
+          <h4>Gopalakrishnan</h4>
+          <h5>Developer</h5>
+        </div>
+      </a>
+      <a class="carousel-item" href="#">
+        <div class="testi">
+          <div class="img-area">
+            <img src="img/singh.jpg" />
+          </div>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+            veritatis repellendus delectus, est, alias recusandae."
+          </p>
+          <h4>Singh</h4>
+          <h5>Fullstack Web Developer</h5>
+        </div>
+      </a>
+      <a class="carousel-item" href="#">
+        <div class="testi">
+          <div class="img-area">
+            <img src="img/karma.jpg" />
+          </div>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+            veritatis repellendus delectus, est, alias recusandae."
+          </p>
+          <h4>Veeramani</h4>
+          <h5>Web Developer</h5>
+        </div>
+      </a>
+      <a class="carousel-item" href="#">
+        <div class="testi">
+          <div class="img-area">
+            <img src="img/Kesavan.jpg" />
+          </div>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+            veritatis repellendus delectus, est, alias recusandae."
+          </p>
+          <h4>Kesavan</h4>
+          <h5>Web Designer</h5>
+        </div>
+      </a>
+      <a class="carousel-item" href="#">
+        <div class="testi">
+          <div class="img-area">
+            <img src="img/vijaykumar.jpg" />
+          </div>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+            veritatis repellendus delectus, est, alias recusandae."
+          </p>
+          <h4>Jessica Jones</h4>
+          <h5>Developer</h5>
+        </div>
+      </a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="materialize-v1.0.0/materialize/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".carousel").carousel({
+          padding: 200,
+        });
+        autoplay();
+        function autoplay() {
+          $(".carousel").carousel("next");
+          setTimeout(autoplay, 4500);
+        }
+      });
+    </script>
+  </body>
+</html>
